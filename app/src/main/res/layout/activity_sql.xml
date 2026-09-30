@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorToolbar">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sql_console"
+            style="@style/ToolbarTitle" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/query_history"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:id="@+id/btnOpenSql"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/open_sql_file"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+    <!-- SQL editor gets more space (weight 3) -->
+    <EditText
+        android:id="@+id/etSql"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="8dp"
+        android:gravity="top|start"
+        android:hint="@string/sql"
+        android:inputType="textMultiLine"
+        android:fontFamily="monospace"
+        android:background="@color/colorSurface"
+        android:padding="12dp"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <Button
+            android:id="@+id/btnExecute"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/execute"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary" />
+
+        <Button
+            android:id="@+id/btnExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/explain"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnFavorites"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/favorites"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <!-- Result / error area (weight 1.5 ≈ half of previous equal split feel) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorSurface">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="13sp"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+    <!-- Copy under the result TextView -->
+    <Button
+        android:id="@+id/btnCopyResult"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="8dp"
+        android:text="@string/copy"
+        android:textAllCaps="false" />
+</LinearLayout>

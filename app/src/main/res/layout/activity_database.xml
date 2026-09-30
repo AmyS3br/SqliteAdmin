@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorToolbar">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <TextView
+            android:id="@+id/tvDbName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            style="@style/ToolbarTitle" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="⚙"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/colorSurface">
+
+        <Button
+            android:id="@+id/btnNewTable"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/new_table"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginEnd="3dp" />
+
+        <Button
+            android:id="@+id/btnSql"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/sql"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginHorizontal="3dp" />
+
+        <Button
+            android:id="@+id/btnExport"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/export"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginHorizontal="3dp" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/info"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginStart="3dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSaveStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:text="@string/tables"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTables"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:clipToPadding="false" />
+</LinearLayout>

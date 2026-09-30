@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorToolbar">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnPrimary"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <TextView
+            android:id="@+id/tvTableTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            style="@style/ToolbarTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:background="@color/colorSurface">
+
+        <Button
+            android:id="@+id/btnAddRow"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/add_row"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/btnSchema"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/schema"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginHorizontal="2dp" />
+
+        <Button
+            android:id="@+id/btnIndexes"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/indexes"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginHorizontal="2dp" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginStart="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorSurface">
+
+        <EditText
+            android:id="@+id/etFilter"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/go"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSort"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/sort"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRowCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextSecondary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRows"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:background="@color/colorSurface"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/prev"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/next"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

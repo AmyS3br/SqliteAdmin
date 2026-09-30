@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorToolbar">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOnPrimary"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings"
+                style="@style/ToolbarTitle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/table_viewer"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rows_per_page"
+                android:textSize="13sp" />
+            <EditText
+                android:id="@+id/etPageSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_screen"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/max_recent"
+                android:textSize="13sp" />
+            <EditText
+                android:id="@+id/etRecentCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="8" />
+
+            <Button
+                android:id="@+id/btnClearRecent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear_recent"
+                android:textAllCaps="false"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/theme"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spTheme"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/behavior"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbAutoSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_save" />
+
+            <CheckBox
+                android:id="@+id/cbConfirmSql"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_sql" />
+
+            <CheckBox
+                android:id="@+id/cbConfirmDrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_drop"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/max_query_history"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/etMaxHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="40" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/about"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/save_settings"
+                android:textAllCaps="false"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorOnPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

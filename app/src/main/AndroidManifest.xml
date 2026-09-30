@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amys3labs.sqliteadmin">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:allowBackup="true"
+        
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Open .db / .sqlite / .sqlite3 from any file manager -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+
+                <data android:mimeType="application/x-sqlite3" />
+                <data android:mimeType="application/vnd.sqlite3" />
+
+                <data android:pathPattern=".*\\.db" />
+                <data android:pathPattern=".*\\.DB" />
+                <data android:pathPattern=".*\\.sqlite" />
+                <data android:pathPattern=".*\\.SQLITE" />
+                <data android:pathPattern=".*\\.sqlite3" />
+                <data android:pathPattern=".*\\.SQLITE3" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DatabaseActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".TableActivity"
+            android:exported="false"
+            android:parentActivityName=".DatabaseActivity" />
+
+        <activity
+            android:name=".SqlConsoleActivity"
+            android:exported="false"
+            android:parentActivityName=".DatabaseActivity" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+</manifest>
