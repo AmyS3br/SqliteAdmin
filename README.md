@@ -1,4 +1,4 @@
-<img width="720" height="1600" alt="010" src="https://github.com/user-attachments/assets/c9bff71f-ca51-4944-b61c-46947e74feda" /># Sqlite Admin
+# Sqlite Admin
 
 A free, offline SQLite database manager for Android.
 
@@ -74,6 +74,7 @@ Think of it as a simplified “phpMyAdmin-style” workflow, but for **SQLite fi
 <img width="360" height="800" alt="007" src="https://github.com/user-attachments/assets/170cd468-69ae-4b07-bfdc-3fd6f3e7c1ea" />
 <img width="360" height="800" alt="008" src="https://github.com/user-attachments/assets/27d52ae5-4475-4f20-9cb9-46937c0e54b7" />
 <img width="360" height="800" alt="009" src="https://github.com/user-attachments/assets/d9976f6f-f8c4-4453-9ded-0f02ee99ba6a" />
+<img width="360" height="800" alt="010" src="https://github.com/user-attachments/assets/c9bff71f-ca51-4944-b61c-46947e74feda" />
 
 ---
 
