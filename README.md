@@ -1,8 +1,9 @@
-# Sqlite Admin
+<img width="720" height="1600" alt="010" src="https://github.com/user-attachments/assets/c9bff71f-ca51-4944-b61c-46947e74feda" /># Sqlite Admin
 
 A free, offline SQLite database manager for Android.
 
 No ads. No in-app purchases. No account. Open a `.db` file, edit it, run SQL, export, save — done.
+<img width="360" height="800" alt="001" src="https://github.com/user-attachments/assets/31449d82-74bc-4273-a7c7-c4943016b1ac" />
 
 ---
 
@@ -61,6 +62,18 @@ Think of it as a simplified “phpMyAdmin-style” workflow, but for **SQLite fi
 
 - Android 7.0+ (API 24)
 - No root required for normal use (open files you can access through the file picker)
+
+---
+
+<img width="360" height="800" alt="002" src="https://github.com/user-attachments/assets/be8b2102-4a61-4c18-bc20-314363cdf06c" />
+<img width="360" height="800" alt="003" src="https://github.com/user-attachments/assets/a5c0e455-7f73-4b17-b5d5-9761317063fc" />
+<img width="360" height="800" alt="004" src="https://github.com/user-attachments/assets/d4501cef-7b2e-4ad7-8052-307fc804c9e1" />
+<img width="360" height="800" alt="005" src="https://github.com/user-attachments/assets/86b1b471-d774-4947-a333-a6ab349a73d9" />
+<img width="360" height="800" alt="006" src="https://github.com/user-attachments/assets/fe3c972b-49bd-42b3-b8c8-a2a55aa25bd8" />
+<img width="360" height="800" alt="011" src="https://github.com/user-attachments/assets/b28b982c-71e5-43f1-aa1a-214b4d606c5d" />
+<img width="360" height="800" alt="007" src="https://github.com/user-attachments/assets/170cd468-69ae-4b07-bfdc-3fd6f3e7c1ea" />
+<img width="360" height="800" alt="008" src="https://github.com/user-attachments/assets/27d52ae5-4475-4f20-9cb9-46937c0e54b7" />
+<img width="360" height="800" alt="009" src="https://github.com/user-attachments/assets/d9976f6f-f8c4-4453-9ded-0f02ee99ba6a" />
 
 ---
 
